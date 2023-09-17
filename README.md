@@ -69,10 +69,18 @@ Welcome to my C++ Projects Showcase! This repository is a collection of C++ proj
    - Folder: `/PointerProblem`
 
 9. **QuestionalValidator**
-   - Description: [Briefly describe the QuestionalValidator project.]
+   - Description: The "Question Validator" project is designed to validate various types of questions commonly used in educational assessments and quizzes. It provides a comprehensive toolset to verify the correctness and format of different question types, including:
+
+- **True/False Questions**: This component assesses whether a true/false question adheres to the correct format, ensuring that it has a clear statement and a valid answer of "True" or "False."
+
+- **Short Answer Questions**: The short answer question validator checks if the question contains a complete and well-structured prompt and validates student responses based on specific criteria, such as word count or keywords.
+
+- **Multiple Choice Questions**: For multiple choice questions, the validator confirms that each question has a precise and consistent format with clear answer choices. It also checks the validity of answer selections.
+
+This project aims to assist educators, content creators, and students in ensuring the accuracy and quality of educational questions. By automating the validation process, it helps reduce errors and ensures that questions meet established standards for clarity and correctness.
    - Difficulty: Moderate
    - Folder: `/QuestionalValidator`
-     
+
 10. **SetTesting**
    - Description: The "SetTesting" project involves a C++ template class named `Set` designed to represent a set of distinct objects. It supports various set operations, including union, intersection, and equality checks. The `Set` class is implemented with methods for managing and manipulating sets of any data type. The project also includes a comprehensive set of test cases to validate the correctness of the `Set` class's functionality.
    - Difficulty: Moderate
