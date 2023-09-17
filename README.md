@@ -72,3 +72,26 @@ Welcome to my C++ Projects Showcase! This repository is a collection of C++ proj
    - Description: [Briefly describe the QuestionalValidator project.]
    - Difficulty: Moderate
    - Folder: `/QuestionalValidator`
+     
+10. **SetTesting**
+   - Description: The "SetTesting" project involves a C++ template class named `Set` designed to represent a set of distinct objects. It supports various set operations, including union, intersection, and equality checks. The `Set` class is implemented with methods for managing and manipulating sets of any data type. The project also includes a comprehensive set of test cases to validate the correctness of the `Set` class's functionality.
+   - Difficulty: Moderate
+   - Folder: `/SetTesting`
+
+11. **StatementFactCheck**
+    - Description: The "StatementFactCheck" project introduces the `FactCheckedStatement` class in C++ for verifying and representing statements. This class ensures that statements begin with a capital letter and end with a period. It also allows users to assign a truth value (between 0.0 and 1.0) to the statement. The project includes overloads for the assignment operator and the output stream operator, enabling users to set and display fact-checked statements with their corresponding truth values.
+    - Difficulty: Moderate
+    - Folder: `/StatementFactCheck`
+
+12. **StringFunctions**
+    - Description: The "StringFunctions" project includes C++ functions for string manipulation. It provides functions for counting the number of digits in an integer, as well as finding and replacing specific digits within an integer. These functions ensure valid inputs and allow for the replacement of single or double-digit values in an integer. The project offers flexibility in digit replacement and can handle both positive and negative integers.
+    - Difficulty: Moderate
+    - Folder: `/StringFunctions`
+   
+13. **Weather and Time**
+    - Description: The "Weather and Time" project encompasses two distinct components. First, it includes the implementation of the `Temperature` class in C++, allowing you to work with temperature values and units (Celsius, Fahrenheit, Kelvin). This class provides methods to set temperature values and units and print temperature information. Second, it features the `TimeOfDay` class, which enables you to work with time values, including hours, minutes, and seconds. The class provides methods to set these components and print time in both 12-hour and military formats. It includes default values for initialization and customization options for displaying seconds and choosing between 12-hour and military time.
+    - Difficulty: Moderate
+    - Folder: `/WeatherAndTime`
+
+
+
