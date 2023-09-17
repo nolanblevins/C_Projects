@@ -1,0 +1,59 @@
+if ((ValidDate(firstMonth, firstDay, firstYear))&&
+      ValidDate(secMonth, secDay, secYear)) {
+        if ((tempYear < secYear) ||
+            ((tempYear == secYear)&&
+              (tempMonth < secYear))||
+              ((tempYear == secYear)&&
+               (tempMonth == secMonth)&&
+               (tempDay < secDay))) {
+                while (secYear > tempYear) {
+                  tempYear --;
+                  if (LeapYear(tempYear)) {
+                    dayCount += 366;
+                  } else {
+                    dayCount += 365;
+                  }
+                }
+          while ((secMonth > tempMonth)||
+                  (secDay > tempDay)) {
+            PreviousDate(tempMonth, tempDay, tempYear);
+            dayCount += 1;          
+          }
+          cout << firstMonth << firstMonthDayDelim << 
+                  firstDay << firstDayYearDelim << 
+                  firstYear << " is " << dayCount << 
+                  " days before " << secMonth << 
+                  secMonthDayDelim << secDay <<
+                  secDayYearDelim << secYear;
+        } else {
+           while (secYear < tempYear) {
+                  tempYear ++;
+                  if (LeapYear(tempYear)) {
+                    dayCount += 366;
+                  } else {
+                    dayCount += 365;
+                  }
+                }
+          while ((secMonth < tempMonth)||
+                  (secDay < tempDay)) {
+            NextDate(tempMonth, tempDay, tempYear);
+            dayCount += 1; 
+          }
+          cout << firstMonth << firstMonthDayDelim << 
+                  firstDay << firstDayYearDelim << 
+                  firstYear << " is " << dayCount << 
+                  " days after " << secMonth << 
+                  secMonthDayDelim << secDay <<
+                  secDayYearDelim << secYear;
+        }
+      } else {
+        if (!ValidDate(firstMonth, firstDay, firstYear)) {
+          cout << firstMonth << firstMonthDayDelim <<
+          firstDay << firstDayYearDelim << firstYear <<
+          " is not a valid date";
+        } else if (!ValidDate(secMonth, secDay, secYear)) {
+          cout << secMonth << secMonthDayDelim <<
+          secDay << secDayYearDelim << secYear <<
+          " is not a valid date";
+        }
+      }
